@@ -23,13 +23,13 @@ public class HomeController {
     }
     
     @GetMapping("/reverse")
-    public String reverse(@RequestParam(required=true) String sentence, Model m){
+    public String reverse(@RequestParam(required=true) String sentence, Model m) {
         String reversedSentence = reverseString(sentence);
         m.addAttribute("reversedSentence",reversedSentence);
         return "reversed";
     }
 
-    private String reverseString(String variable) {
+    protected String reverseString(String variable) {
         String str[]=variable.split("\\s");
         String reversedString = "";
         for(int i = str.length-1;i>=0;i--){
