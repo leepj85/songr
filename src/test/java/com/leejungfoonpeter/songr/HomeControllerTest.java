@@ -1,5 +1,6 @@
 package com.leejungfoonpeter.songr;
 
+import com.leejungfoonpeter.songr.controllers.HomeController;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
