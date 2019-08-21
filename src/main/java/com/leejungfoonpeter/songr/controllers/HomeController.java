@@ -1,4 +1,4 @@
-package com.leejungfoonpeter.songr;
+package com.leejungfoonpeter.songr.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,7 +29,7 @@ public class HomeController {
         return "reversed";
     }
 
-    protected String reverseString(String variable) {
+    public String reverseString(String variable) {
         String str[]=variable.split("\\s");
         String reversedString = "";
         for(int i = str.length-1;i>=0;i--){
